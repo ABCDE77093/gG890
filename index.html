@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청소년 수면시간 추천</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <h1>청소년 수면시간 추천</h1>
+        <div class="input-section">
+            <label for="sleepTime">현재 수면시간을 입력하세요 (시간):</label>
+            <input type="number" id="sleepTime" min="0" max="24" step="0.5" placeholder="예: 7.5">
+            <button onclick="recommendSleep()">추천받기</button>
+        </div>
+        
+        <div class="result-section" id="resultSection" style="display: none;">
+            <h2>수면시간 분석 결과</h2>
+            <div class="current-sleep">
+                <span>현재 수면시간: </span>
+                <span id="currentSleep"></span>
+            </div>
+            <div class="recommendation">
+                <span>권장 수면시간: </span>
+                <span class="highlight">8-10시간</span>
+            </div>
+            <div class="status" id="sleepStatus"></div>
+            <div class="advice" id="advice"></div>
+        </div>
+        
+        <div class="info-section">
+            <h3>청소년 수면의 중요성</h3>
+            <ul>
+                <li>성장호르몬 분비 촉진</li>
+                <li>학습능력 및 기억력 향상</li>
+                <li>면역력 강화</li>
+                <li>정서적 안정</li>
+                <li>신체 발달 지원</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
